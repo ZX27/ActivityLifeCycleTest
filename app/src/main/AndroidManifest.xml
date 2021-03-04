@@ -11,12 +11,11 @@
         android:theme="@style/Theme.ActivityLifeCycleTest">
         <activity
             android:name=".DialogActivity"
-            android:theme="@android:style/Theme.Dialog"></activity>
+            android:theme="@style/Theme.AppCompat.Dialog"></activity> <!--为什么不用@android:style/Theme.Dialog呢？-->
         <activity android:name=".NormalActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
